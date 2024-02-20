@@ -94,7 +94,7 @@ body {
 						<label for="password2">Re-enter password</label> <input
 							type="password" class="form-control" id="password2"
 							name="password2" placeholder="Similar password" required>
-							<input type="checkbox" onclick="showPassword()"> Show Password
+							<input type="checkbox" onclick="showPassword2()"> Show Password
 					</div>
 					<div class="form-group">
 						<label>Gender</label>
@@ -170,6 +170,16 @@ body {
 		<script>
         function showPassword() {
             var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+        
+        
+        function showPassword2() {
+            var passwordField = document.getElementById("password2");
             if (passwordField.type === "password") {
                 passwordField.type = "text";
             } else {

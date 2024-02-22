@@ -181,7 +181,7 @@ body {
         function showPassword2() {
             var passwordField = document.getElementById("password2");
             if (passwordField.type === "password") {
-                passwordField.type = "text";
+                passwordField.type 	= "text";
             } else {
                 passwordField.type = "password";
             }
